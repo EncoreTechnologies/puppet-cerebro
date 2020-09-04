@@ -1,4 +1,6 @@
 # Cerebro Puppet Module
+
+[![Build Status](https://travis-ci.org/EncoreTechnologies/puppet-cerebro.svg?branch=master)](https://travis-ci.org/EncoreTechnologies/puppet-cerebro)
 [![Puppet Forge](https://img.shields.io/puppetforge/v/encore/cerebro.svg?style=flat-square)](https://forge.puppet.com/encore/cerebro)
 [![License](https://img.shields.io/github/license/EncoreTechnologies/puppet-cerebron.svg)](https://github.com/EncoreTechnologies/puppet-cerebro/blob/master/LICENSE)
 
