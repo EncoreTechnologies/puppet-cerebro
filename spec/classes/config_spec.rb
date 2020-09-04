@@ -26,6 +26,7 @@ describe 'cerebro::config' do
 
       context 'with hosts set' do
         let(:pre_condition) { 'class {\'cerebro\': hosts => [{ "name" => "my_cluster", "host" => "http://127.0.0.1:9200"}] }' }
+
         describe 'configuration file' do
           it 'contains the hosts' do
             content = catalogue.resource('file', '/etc/cerebro/application.conf').send(:parameters)[:content]

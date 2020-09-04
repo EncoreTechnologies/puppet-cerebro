@@ -8,7 +8,7 @@ describe 'cerebro::install' do
       end
 
       context 'by default' do
-        let(:pre_condition) { 'include cerebro' }
+        let(:pre_condition) { "class { 'cerebro': version => '0.8.1' }" }
 
         it do
           is_expected.to contain_file('/opt/cerebro-0.8.1').with(
@@ -52,7 +52,7 @@ describe 'cerebro::install' do
         it do
           is_expected.to contain_file('/var/log/cerebro').with(
             'ensure' => 'link',
-            'target' => '/opt/cerebro/logs',
+            'target' => '/opt/cerebro/logs'
           )
         end
 

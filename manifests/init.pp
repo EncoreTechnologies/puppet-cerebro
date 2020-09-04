@@ -44,8 +44,8 @@ class cerebro (
   String[1]        $version        = $cerebro::params::version,
   String           $secret         = $cerebro::params::secret,
   Array[Struct[{
-    host => Stdlib::HTTPUrl,
-    name => String[1]
+        host => Stdlib::HTTPUrl,
+        name => String[1]
   }]]                 $hosts          = $cerebro::params::hosts,
   Variant[Pattern[/^\/$/],Stdlib::Unixpath] $basepath = $cerebro::params::basepath,
   Stdlib::Unixpath    $shell          = $cerebro::params::shell,
@@ -57,7 +57,6 @@ class cerebro (
   Optional[Hash] $basic_auth_settings    = $cerebro::params::basic_auth_settings,
   Optional[Stdlib::IP::Address] $address = $cerebro::params::address,
 ) inherits cerebro::params {
-
   contain cerebro::user
   contain cerebro::install
   contain cerebro::config

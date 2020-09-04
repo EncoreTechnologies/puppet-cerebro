@@ -1,14 +1,13 @@
 # @summary Installs Cerebro
 #
 # @api private
-class cerebro::install
-{
-  $version     = $cerebro::version
-  $address     = $cerebro::address
-  $user        = $cerebro::cerebro_user
-  $package_url = $cerebro::package_url
-  $sysconfig   = $cerebro::sysconfig
-
+class cerebro::install (
+  $version     = $cerebro::version,
+  $address     = $cerebro::address,
+  $user        = $cerebro::cerebro_user,
+  $package_url = $cerebro::package_url,
+  $sysconfig   = $cerebro::sysconfig,
+) {
   $group = $user
   $real_package_url = pick($package_url, "https://github.com/lmenezes/cerebro/releases/download/v${version}/cerebro-${version}.tgz")
 
@@ -62,5 +61,4 @@ class cerebro::install
       content => template('cerebro/etc/systemd/system/cerebro.service.erb'),
     }
   }
-
 }
