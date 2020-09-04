@@ -18,6 +18,7 @@ describe 'cerebro::user' do
 
       context 'by default' do
         let(:pre_condition) { 'include cerebro' }
+
         it do
           is_expected.to contain_user('cerebro').with(
             'home' => '/opt/cerebro',
@@ -45,6 +46,7 @@ describe 'cerebro::user' do
 
       context 'when manage_user is false' do
         let(:pre_condition) { 'class {\'cerebro\': manage_user => false }' }
+
         it { is_expected.not_to contain_user('cerebro') }
       end
     end

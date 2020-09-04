@@ -1,8 +1,7 @@
 # @summary Manages Cerebro service
 #
 # @api private
-class cerebro::service
-{
+class cerebro::service {
   if $facts['os']['name'] == 'Amazon' {
     service { 'cerebro':
       ensure  => $cerebro::service_ensure,
