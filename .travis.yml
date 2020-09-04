@@ -29,17 +29,12 @@ branches:
   - /^v\d/
 notifications:
   email: false
-  webhooks: https://voxpupu.li/incoming/travis
-  irc:
-    on_success: always
-    on_failure: always
-    channels:
-      - "chat.freenode.org#voxpupuli-notifications"
+  webhooks: []
 deploy:
   provider: puppetforge
-  username: puppet
+  username: encore
   password:
-    secure: ""
+    secure: "PYyIxZbQSE/BfBa9kBlQ5zN/K3e7A8eTCsur+rpdDXMtlzohYDlr5VSFviOvx4LguRCsDneoP5G6Ie/HP/CoyzJjt0CQwBgREx5aG5bjt310sab8Fufl3RW3rgDCoBu2f9RcO7/yR02s34wTvaS83VKxsoHqVevISNYe0teWCb72Avc8TVg8oVdjvenlki9TItS2aNq4YrIbj741DQu5GCH5uTIlDJMJcaq5agjdJYRj0OQy7ztdLMzHjvZAyVK5zTFt2sftDaOVKClXCqananTM3TObe6+rg23FSk1nsSriDwfk9TFMVlxy9NUuggzYCMmZLXXu+w/hgcCZODw6XlDKshfuPc2XWp2/ub4dptnCv1qUZzZQ6yuDBy7FH6A2uqTjvwO4wwWroozAF8qNTJ342ge4Xae/dqbJ4/tBFa/fBwlpzHPKzqT6fXhl2yVN7+hqXoTApmqpG6fpTc5Rag+0R7xm5m/aUY1kzT5ZjIMOUeKd4WMNs9TSWDly3rpUkLp9K2IhmAnPceJD619wSaACkt33e1Vue9RrklwzhBvRErNTtLCneo+d31B5MyK0MDfi/b3j19vLFbntX6Qsb/Nt767HZF4CfIAgXEZTmbhIwGxA67S9h9XVA8G8LtXaW0d7dBPQOAUwZgvzrMhXmCBhe8JY/CeVaWS4uUyoknE="
   on:
     tags: true
     # all_branches is required to use tags
