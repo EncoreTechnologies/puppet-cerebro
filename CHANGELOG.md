@@ -1,5 +1,9 @@
 ## Development
 
+- Switch from Travis to GitHub Actions
+
+  Contributed by Nick Maludy (@nmaludy)
+
 ## 2020-09-03 - Release v0.3.0
 
 - Forked the module from yono3 to Encore Technologies
