@@ -7,10 +7,6 @@
   "source": "https://github.com/EncoreTechnologies/puppet-cerebro",
   "project_page": "https://github.com/EncoreTechnologies/puppet-cerebro",
   "issues_url": "https://github.com/EncoreTechnologies/puppet-cerebro/issues",
-  "tags": [
-    "elasticsearch",
-    "cerebro"
-  ],
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
@@ -73,5 +69,11 @@
       "version_requirement": ">=4.0.0 <6.0.0"
     }
   ],
-  "data_provider": null
+  "tags": [
+    "elasticsearch",
+    "cerebro"
+  ],
+  "pdk-version": "1.18.1",
+  "template-url": "pdk-default#1.18.1",
+  "template-ref": "tags/1.18.1-0-g3d2e75c"
 }

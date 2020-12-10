@@ -13,7 +13,7 @@ describe 'cerebro::service' do
         it do
           is_expected.to contain_service('cerebro').with(
             'ensure' => 'running',
-            'enable' => true
+            'enable' => true,
           )
         end
       end

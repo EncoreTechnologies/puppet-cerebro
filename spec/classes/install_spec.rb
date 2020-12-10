@@ -15,7 +15,7 @@ describe 'cerebro::install' do
             'ensure' => 'directory',
             'owner' => 'cerebro',
             'group' => 'cerebro',
-            'mode' => '0755'
+            'mode' => '0755',
           )
         end
 
@@ -27,7 +27,7 @@ describe 'cerebro::install' do
             'creates' => '/opt/cerebro-0.8.1/bin',
             'cleanup' => true,
             'user' => 'cerebro',
-            'group' => 'cerebro'
+            'group' => 'cerebro',
           )
           is_expected.to contain_archive('/tmp/cerebro-0.8.1.tgz').that_requires('File[/opt/cerebro-0.8.1]')
         end
@@ -35,7 +35,7 @@ describe 'cerebro::install' do
         it do
           is_expected.to contain_file('/opt/cerebro').with(
             'ensure' => 'link',
-            'target' => '/opt/cerebro-0.8.1'
+            'target' => '/opt/cerebro-0.8.1',
           ).that_requires('Archive[/tmp/cerebro-0.8.1.tgz]')
         end
 
@@ -44,7 +44,7 @@ describe 'cerebro::install' do
             is_expected.to contain_file(directory).with(
               'ensure' => 'directory',
               'owner'  => 'cerebro',
-              'group'  => 'cerebro'
+              'group'  => 'cerebro',
             )
           end
         end
@@ -52,7 +52,7 @@ describe 'cerebro::install' do
         it do
           is_expected.to contain_file('/var/log/cerebro').with(
             'ensure' => 'link',
-            'target' => '/opt/cerebro/logs'
+            'target' => '/opt/cerebro/logs',
           )
         end
 
