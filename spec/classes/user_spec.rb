@@ -22,7 +22,7 @@ describe 'cerebro::user' do
         it do
           is_expected.to contain_user('cerebro').with(
             'home' => '/opt/cerebro',
-            'shell' => default_shell
+            'shell' => default_shell,
           )
         end
       end

@@ -11,21 +11,21 @@ describe 'cerebro' do
       it { is_expected.to contain_class('cerebro::params') }
 
       it do
-        is_expected.to contain_class('cerebro::user').
-          that_comes_before('Class[cerebro::install]')
+        is_expected.to contain_class('cerebro::user')
+          .that_comes_before('Class[cerebro::install]')
       end
 
       it { is_expected.to contain_class('cerebro::install') }
 
       it do
-        is_expected.to contain_class('cerebro::config').
-          that_requires('Class[cerebro::install]')
+        is_expected.to contain_class('cerebro::config')
+          .that_requires('Class[cerebro::install]')
       end
 
       it do
-        is_expected.to contain_class('cerebro::service').
-          that_subscribes_to('Class[cerebro::config]').
-          that_subscribes_to('Class[cerebro::install]')
+        is_expected.to contain_class('cerebro::service')
+          .that_subscribes_to('Class[cerebro::config]')
+          .that_subscribes_to('Class[cerebro::install]')
       end
     end
   end
