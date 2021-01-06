@@ -21,3 +21,6 @@ hosts = [
   },
 <% end -%>
 ]
+<% if @accept_any_certificate == true -%>
+play.ws.ssl.loose.acceptAnyCertificate = true
+<% end -%>
