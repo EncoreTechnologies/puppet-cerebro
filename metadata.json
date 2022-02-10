@@ -1,6 +1,6 @@
 {
   "name": "encore-cerebro",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "encore",
   "summary": "Module for managing and configuring Cerebro",
   "license": "MIT",
@@ -10,26 +10,27 @@
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.25.0 < 7.0.0"
+      "version_requirement": ">= 4.25.0 < 9.0.0"
     },
     {
       "name": "puppet/archive",
-      "version_requirement": ">= 1.0.0 < 5.0.0"
+      "version_requirement": ">= 1.0.0 < 7.0.0"
     },
     {
       "name": "puppet/extlib",
-      "version_requirement": ">= 0.10.4 < 5.0.0"
+      "version_requirement": ">= 0.10.4 < 7.0.0"
     },
     {
-      "name": "camptocamp/systemd",
-      "version_requirement": ">= 0.4.0 < 3.0.0"
+      "name": "puppet/systemd",
+      "version_requirement": ">= 3.1.2 < 4.0.0"
     }
   ],
   "operatingsystem_support": [
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "7"
+        "7",
+        "8"
       ]
     },
     {
@@ -41,13 +42,15 @@
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "7"
+        "7",
+        "8"
       ]
     },
     {
       "operatingsystem": "Scientific",
       "operatingsystemrelease": [
-        "7"
+        "7",
+        "8"
       ]
     },
     {
@@ -59,14 +62,16 @@
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "16.04"
+        "16.04",
+        "18.04",
+        "20.04"
       ]
     }
   ],
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">=4.0.0 <6.0.0"
+      "version_requirement": ">=6.0.0 < 8.0.0"
     }
   ],
   "tags": [
