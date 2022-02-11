@@ -1,8 +1,10 @@
-## Development
+## 2022-02-10 - Release v0.3.1
 
-- Switch from Travis to GitHub Actions
+- Switch from camptocamp-systemd to puppet-systemd.
+- Update metadata version requirements.
 
-  Contributed by Nick Maludy (@nmaludy)
+  Contributed by @paxri01
+
 
 ## 2020-09-03 - Release v0.3.0
 
@@ -11,3 +13,11 @@
 - Added spec tests and puppet strings documentation
 
   Contributed by @alexjfisher
+
+
+## Development
+
+- Switch from Travis to GitHub Actions
+
+  Contributed by Nick Maludy (@nmaludy)
+
