@@ -27,4 +27,5 @@ class cerebro::params {
     'Debian' => '/etc/default/cerebro',
     default  => '/etc/sysconfig/cerebro',
   }
+  $accept_any_certificate = false
 }

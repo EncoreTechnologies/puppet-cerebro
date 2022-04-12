@@ -38,6 +38,8 @@
 #  Defines basic authentication settings.
 # @param address
 #  Defines the IP address cerebro should listen on.
+# @param accept_any_certificate
+#  Determines if we accept or deny self-signed certificates
 class cerebro (
   Stdlib::Ensure::Service $service_ensure = $cerebro::params::service_ensure,
   Boolean          $service_enable = $cerebro::params::service_enable,
@@ -56,6 +58,7 @@ class cerebro (
   Optional[Stdlib::Unixpath] $java_home  = $cerebro::params::java_home,
   Optional[Hash] $basic_auth_settings    = $cerebro::params::basic_auth_settings,
   Optional[Stdlib::IP::Address] $address = $cerebro::params::address,
+  Boolean        $accept_any_certificate = $cerebro::params::accept_any_certificate,
 ) inherits cerebro::params {
   contain cerebro::user
   contain cerebro::install
