@@ -1,6 +1,6 @@
 {
   "name": "encore-cerebro",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "encore",
   "summary": "Module for managing and configuring Cerebro",
   "license": "MIT",
@@ -22,7 +22,7 @@
     },
     {
       "name": "puppet/systemd",
-      "version_requirement": ">= 3.1.2 < 4.0.0"
+      "version_requirement": ">= 3.1.2 < 5.0.0"
     }
   ],
   "operatingsystem_support": [
