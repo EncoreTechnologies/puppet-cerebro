@@ -1,3 +1,9 @@
+## 2024-01-25 - Release v0.3.3
+
+- Update version requirements
+- Code cleanup
+
+
 ## 2022-02-10 - Release v0.3.1
 
 - Switch from camptocamp-systemd to puppet-systemd.
