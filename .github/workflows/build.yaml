@@ -41,11 +41,12 @@ jobs:
       PUPPET_GEM_VERSION: '~> ${{ matrix.puppet }}'
       # lock to 2.1.0 because 2.2.0 is causing issues during builds
       BUNDLER_GEM_VERSION: '~> 2.1.0'
+      RUBYGEMS_VERSION: '~> 3.2.3'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Setup Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '${{ matrix.ruby }}'
       - name: Bundle prep
@@ -93,11 +94,12 @@ jobs:
       PUPPET_GEM_VERSION: '~> ${{ matrix.puppet }}'
       # lock to 2.1.0 because 2.2.0 is causing issues during builds
       BUNDLER_GEM_VERSION: '~> 2.1.0'
+      RUBYGEMS_VERSION: '~> 3.2.3'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Setup Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '${{ matrix.ruby }}'
       - name: Bundle prep
