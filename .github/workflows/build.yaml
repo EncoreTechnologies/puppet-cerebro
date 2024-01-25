@@ -40,7 +40,7 @@ jobs:
       CHECK: '${{ matrix.check }}'
       PUPPET_GEM_VERSION: '~> ${{ matrix.puppet }}'
       # lock to 2.1.0 because 2.2.0 is causing issues during builds
-      BUNDLER_GEM_VERSION: '~> 2.1.0'
+      BUNDLER_GEM_VERSION: '~> 2.4.2'
       RUBYGEMS_VERSION: '~> 3.2.3'
     steps:
       - name: Checkout repository
@@ -93,7 +93,7 @@ jobs:
     env:
       PUPPET_GEM_VERSION: '~> ${{ matrix.puppet }}'
       # lock to 2.1.0 because 2.2.0 is causing issues during builds
-      BUNDLER_GEM_VERSION: '~> 2.1.0'
+      BUNDLER_GEM_VERSION: '~> 2.4.2'
       RUBYGEMS_VERSION: '~> 3.2.3'
     steps:
       - name: Checkout repository
