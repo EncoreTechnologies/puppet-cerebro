@@ -1,12 +1,13 @@
 # @summary Installs Cerebro
 #
 # @api private
+#
 class cerebro::install (
-  $version     = $cerebro::version,
-  $address     = $cerebro::address,
-  $user        = $cerebro::cerebro_user,
-  $package_url = $cerebro::package_url,
-  $sysconfig   = $cerebro::sysconfig,
+  String                         $version     = $cerebro::version,
+  Optional[Stdlib::IP::Address]  $address     = $cerebro::address,
+  String                         $user        = $cerebro::cerebro_user,
+  Optional[String]               $package_url = $cerebro::package_url,
+  Stdlib::Absolutepath           $sysconfig   = $cerebro::sysconfig,
 ) {
   $group = $user
   $real_package_url = pick($package_url, "https://github.com/lmenezes/cerebro/releases/download/v${version}/cerebro-${version}.tgz")
