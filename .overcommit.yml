@@ -1,5 +1,4 @@
-# Managed by modulesync - DO NOT EDIT
-# https://voxpupuli.org/docs/updating-files-managed-with-modulesync/
+# Managed by https://github.com/voxpupuli/modulesync_configs
 #
 # Hooks are only enabled if you take action.
 #
@@ -62,4 +61,4 @@ PrePush:
       - 'validate'
       - 'test'
       - 'rubocop'
-    command: ['bundle', 'exec', 'rake']
+    command: [ 'bundle', 'exec', 'rake' ]
