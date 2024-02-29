@@ -1,6 +1,6 @@
 {
   "name": "encore-cerebro",
-  "version": "0.3.1",
+  "version": "0.3.5",
   "author": "encore",
   "summary": "Module for managing and configuring Cerebro",
   "license": "MIT",
@@ -10,19 +10,19 @@
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.25.0 < 9.0.0"
+      "version_requirement": ">= 4.25.0 < 10.0.0"
     },
     {
       "name": "puppet/archive",
-      "version_requirement": ">= 1.0.0 < 7.0.0"
+      "version_requirement": ">= 1.0.0 < 8.0.0"
     },
     {
       "name": "puppet/extlib",
-      "version_requirement": ">= 0.10.4 < 7.0.0"
+      "version_requirement": ">= 0.10.4 < 8.0.0"
     },
     {
       "name": "puppet/systemd",
-      "version_requirement": ">= 3.1.2 < 4.0.0"
+      "version_requirement": ">= 3.1.2 < 7.0.0"
     }
   ],
   "operatingsystem_support": [
@@ -34,29 +34,18 @@
       ]
     },
     {
-      "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [
-        "7"
-      ]
-    },
-    {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
         "7",
-        "8"
-      ]
-    },
-    {
-      "operatingsystem": "Scientific",
-      "operatingsystemrelease": [
-        "7",
-        "8"
+        "8",
+        "9"
       ]
     },
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "8"
+        "10",
+        "11"
       ]
     },
     {
@@ -71,14 +60,14 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">=6.0.0 < 8.0.0"
+      "version_requirement": ">=6.0.0 <= 8.0.0"
     }
   ],
   "tags": [
     "elasticsearch",
     "cerebro"
   ],
-  "pdk-version": "1.18.1",
-  "template-url": "pdk-default#1.18.1",
-  "template-ref": "tags/1.18.1-0-g3d2e75c"
+  "pdk-version": "3.0.1",
+  "template-url": "pdk-default#3.0.1",
+  "template-ref": "tags/3.0.1-0-gd13288a"
 }
