@@ -1,6 +1,14 @@
 fixtures:
-  repositories:
-    stdlib: "https://github.com/puppetlabs/puppetlabs-stdlib"
-    extlib: "https://github.com/voxpupuli/puppet-extlib"
-    archive: "https://github.com/voxpupuli/puppet-archive"
-    systemd: "https://github.com/camptocamp/puppet-systemd"
+  forge_modules:
+    stdlib:
+      repo: "puppetlabs/stdlib"
+      ref: "9.4.1"
+    extlib:
+      repo: "puppet/extlib"
+      ref: "7.0.0"
+    archive:
+      repo: "puppet/archive"
+      ref: "7.1.0"
+    systemd:
+      repo: "puppet/systemd"
+      ref: "6.4.0"
