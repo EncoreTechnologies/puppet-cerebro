@@ -1,6 +1,6 @@
 {
   "name": "encore-cerebro",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "encore",
   "summary": "Module for managing and configuring Cerebro",
   "license": "MIT",
@@ -10,61 +10,57 @@
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.25.0 < 9.0.0"
+      "version_requirement": ">= 4.25.0 < 10.0.0"
     },
     {
       "name": "puppet/archive",
-      "version_requirement": ">= 1.0.0 < 7.0.0"
+      "version_requirement": ">= 1.0.0 < 8.0.0"
     },
     {
       "name": "puppet/extlib",
-      "version_requirement": ">= 0.10.4 < 7.0.0"
+      "version_requirement": ">= 0.10.4 < 8.0.0"
     },
     {
       "name": "puppet/systemd",
-      "version_requirement": ">= 3.1.2 < 4.0.0"
+      "version_requirement": ">= 3.1.2 < 8.0.0"
     }
   ],
   "operatingsystem_support": [
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "7",
         "8"
-      ]
-    },
-    {
-      "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [
-        "7"
       ]
     },
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "7",
-        "8"
+        "8",
+        "9"
       ]
     },
     {
-      "operatingsystem": "Scientific",
+      "operatingsystem": "Rocky",
       "operatingsystemrelease": [
-        "7",
-        "8"
+        "8",
+        "9"
       ]
     },
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "8"
+        "10",
+        "11",
+        "12"
       ]
     },
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "16.04",
         "18.04",
-        "20.04"
+        "20.04",
+        "22.04",
+        "24.04"
       ]
     }
   ],
@@ -78,7 +74,7 @@
     "elasticsearch",
     "cerebro"
   ],
-  "pdk-version": "1.18.1",
-  "template-url": "pdk-default#1.18.1",
-  "template-ref": "tags/1.18.1-0-g3d2e75c"
+  "pdk-version": "3.3.0",
+  "template-url": "pdk-default#3.3.0",
+  "template-ref": "tags/3.3.0-0-g5d17ec1"
 }

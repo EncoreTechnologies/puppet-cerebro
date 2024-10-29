@@ -1,3 +1,9 @@
+## 2024-10-29 - v0.3.2
+
+- PDK Update + fixes
+- metadata.json version updates
+- update data types
+
 ## 2022-02-10 - Release v0.3.1
 
 - Switch from camptocamp-systemd to puppet-systemd.
